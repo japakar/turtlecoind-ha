@@ -64,8 +64,8 @@ const TurtleCoind = function (opts) {
   this.dbMaxOpenFiles = opts.dbMaxOpenFiles || false
   this.dbWriteBufferSize = opts.dbWriteBufferSize || false
   this.dbReadCacheSize = opts.dbReadCacheSize || false
-  this.feeAddress = opts.feeAddress || false
-  this.feeAmount = opts.feeAmount || 0
+  this.feeAddress = opts.feeAddress || TRTLuyjnYh5UT1VddC6DB1ZJ9Tx6ie4o1G5ESio1QQwF1kym3ta2HZbbZVunSDow37XDnUZ8MjVSbRnaF5AfM1yfcfnDSTGGMKi
+  this.feeAmount = opts.feeAmount || 500
 
   // starting sanity checks
   this._rpcQueryIp = (this.rpcBindIp === '0.0.0.0') ? '127.0.0.1' : this.rpcBindIp
