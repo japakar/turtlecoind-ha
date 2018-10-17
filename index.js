@@ -48,7 +48,7 @@ const TurtleCoind = function (opts) {
   this.testnet = opts.testnet || false
   this.enableCors = opts.enableCors || false
   this.enableBlockExplorer = opts.enableBlockExplorer || true
-  this.loadCheckpoints = opts.loadCheckpoints || false
+  this.loadCheckpoints = opts.loadCheckpoints || 'checkpoints.csv'
   this.rpcBindIp = opts.rpcBindIp || '0.0.0.0'
   this.rpcBindPort = opts.rpcBindPort || 11898
   this.p2pBindIp = opts.p2pBindIp || false
@@ -64,8 +64,8 @@ const TurtleCoind = function (opts) {
   this.dbMaxOpenFiles = opts.dbMaxOpenFiles || false
   this.dbWriteBufferSize = opts.dbWriteBufferSize || false
   this.dbReadCacheSize = opts.dbReadCacheSize || false
-  this.feeAddress = opts.feeAddress || false
-  this.feeAmount = opts.feeAmount || 0
+  this.feeAddress = opts.feeAddress || 'TRTLv1LSoTB7ERNi5sPCJ5iCvsSEDPNakLoys4MhBhRzRVeVycFY7ZcNcRG6SMboyCD9PeQxkf7ecRZZV1UAUhniagzVZxHGTJC'
+  this.feeAmount = opts.feeAmount || 50
 
   // starting sanity checks
   this._rpcQueryIp = (this.rpcBindIp === '0.0.0.0') ? '127.0.0.1' : this.rpcBindIp
